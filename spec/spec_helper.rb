@@ -1,6 +1,7 @@
 require "bundler/setup"
 require "independent_reserve_client"
 require "rspec"
+require "pry"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 
