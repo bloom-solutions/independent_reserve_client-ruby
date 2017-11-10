@@ -22,6 +22,11 @@ Or install it yourself as:
 
 ```ruby
 client = IndependentReserveClient.new
+
+# Returns a current snapshot of the Independent Reserve market for a given currency pair.
+client.get_market_summary("XBT", "AUD")
+
+# Returns an exchange rate for the given currency pair
 client.get_exchange_rate("XBT", "AUD")
 ```
 
