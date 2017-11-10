@@ -5,6 +5,7 @@ module IndependentReserveClient
     attribute :host, String
 
     api_action :get_exchange_rate, args: [:primary_currency, :secondary_currency]
+    api_action :get_market_summary, args: [:primary_currency, :secondary_currency]
 
     private
 
