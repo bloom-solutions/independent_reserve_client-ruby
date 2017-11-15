@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetMarketSummary?primaryCurrencyCode=Xbt&secondaryCurrencyCode=Aud
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Nov 2017 04:42:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '343'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d652deabd547702449b255600aad8ab391510288976; expires=Sat, 10-Nov-18
+        04:42:56 GMT; path=/; domain=.independentreserve.com; HttpOnly; Secure
+      Cache-Control:
+      - private
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bb65918bdd84829-MNL
+    body:
+      encoding: UTF-8
+      string: '{"DayHighestPrice":9788.0,"DayLowestPrice":8720.0,"DayAvgPrice":9355.03,"DayVolumeXbt":430.23287892,"DayVolumeXbtInSecondaryCurrrency":429.63801004,"CurrentLowestOfferPrice":9705.0,"CurrentHighestBidPrice":9650.0,"LastPrice":9705.0,"PrimaryCurrencyCode":"Xbt","SecondaryCurrencyCode":"Aud","CreatedTimestampUtc":"2017-11-10T04:42:56.9731794Z"}'
+    http_version: 
+  recorded_at: Fri, 10 Nov 2017 04:42:57 GMT
+recorded_with: VCR 3.0.3

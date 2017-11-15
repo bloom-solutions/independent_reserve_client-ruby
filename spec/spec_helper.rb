@@ -1,5 +1,9 @@
 require "bundler/setup"
-require "independent_reserve_client/ruby"
+require "independent_reserve_client"
+require "rspec"
+require "pry"
+
+SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -11,4 +15,7 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  Dir[SPEC_DIR.join("support", "*.rb")].each {|f| require f}
+
 end
