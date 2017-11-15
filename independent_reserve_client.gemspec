@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "independent_reserve_client/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "independent_reserve_client-ruby"
+  spec.name          = "independent_reserve_client"
   spec.version       = IndependentReserveClient::VERSION
   spec.authors       = ["Arman Jon Villalobos"]
   spec.email         = ["me@armanjon.com"]

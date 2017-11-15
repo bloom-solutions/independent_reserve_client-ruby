@@ -1,4 +1,4 @@
-# IndependentReserveClient::Ruby
+# IndependentReserveClient
 
 Ruby Wrapper for [IndependentReserve's API](https://www.independentreserve.com/API#overview)
 
