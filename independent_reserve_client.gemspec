@@ -6,12 +6,12 @@ require "independent_reserve_client/version"
 Gem::Specification.new do |spec|
   spec.name          = "independent_reserve_client"
   spec.version       = IndependentReserveClient::VERSION
-  spec.authors       = ["Arman Jon Villalobos"]
-  spec.email         = ["me@armanjon.com"]
+  spec.authors       = ["Arman Jon Villalobos", "Ace Subido"]
+  spec.email         = ["me@armanjon.com", "ace.subido@gmail.com"]
 
   spec.summary       = %q{Ruby Wrapper for IndependentReserve's API}
   spec.description   = %q{Ruby Wrapper for IndependentReserve's API}
-  spec.homepage      = "https://github.com/imacchiato/independent_reserve_client-ruby"
+  spec.homepage      = "https://github.com/bloom-solutions/independent_reserve_client-ruby"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
